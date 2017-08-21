@@ -1,5 +1,5 @@
 /*
-   Copyright 2015 Wang Haomiao<et.tw@163.com>
+   Copyright 2015 Wang Haomiao<seimimaster@gmail.com>
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 /**
- * @author 汪浩淼 et.tw@163.com
+ * @author SeimiMaster seimimaster@gmail.com
  * @since 2015/8/17.
  */
 public abstract class BaseSeimiCrawler implements SeimiCrawler {

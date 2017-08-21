@@ -1,5 +1,5 @@
 /*
-   Copyright 2015 Wang Haomiao<et.tw@163.com>
+   Copyright 2015 Wang Haomiao<seimimaster@gmail.com>
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -34,7 +34,7 @@ import java.net.URI;
  * 之所以要自行覆盖默认实现，是因为默认实现在post/redirect/post这种情况下不会传递原有请求的数据信息，只会传递一个uri其他的都丢了，
  * 这显然是非常不理想的，所以必须重写覆盖。结果还是很不错的。
  *
- * @author 汪浩淼 [et.tw@163.com]
+ * @author SeimiMaster [seimimaster@gmail.com]
  */
 public class SeimiRedirectStrategy extends LaxRedirectStrategy {
     private Logger logger = LoggerFactory.getLogger(getClass());

@@ -1,5 +1,5 @@
 /*
-   Copyright 2015 Wang Haomiao<et.tw@163.com>
+   Copyright 2015 Wang Haomiao<seimimaster@gmail.com>
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * okhttp cookie管理
- * @author 汪浩淼 [et.tw@163.com]
+ * @author SeimiMaster [seimimaster@gmail.com]
  * @since 2016/6/8.
  */
 public class CookiesManager implements CookieJar {

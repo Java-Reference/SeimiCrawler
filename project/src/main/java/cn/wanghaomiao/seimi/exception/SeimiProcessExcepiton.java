@@ -1,5 +1,5 @@
 /*
-   Copyright 2015 Wang Haomiao<et.tw@163.com>
+   Copyright 2015 Wang Haomiao<seimimaster@gmail.com>
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ package cn.wanghaomiao.seimi.exception;
 
 /**
  * 运行处理异常
- * @author 汪浩淼 [et.tw@163.com]
+ * @author SeimiMaster [seimimaster@gmail.com]
  * @since 2015/10/26.
  */
 public class SeimiProcessExcepiton extends RuntimeException {

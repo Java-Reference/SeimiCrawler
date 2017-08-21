@@ -1,5 +1,5 @@
 /*
-   Copyright 2015 Wang Haomiao<et.tw@163.com>
+   Copyright 2015 Wang Haomiao<seimimaster@gmail.com>
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ import java.lang.reflect.Method;
 /**
  * 爬虫执行方法的通用拦截器
  *
- * @author 汪浩淼 et.tw@163.com
+ * @author SeimiMaster seimimaster@gmail.com
  * @since 2015/5/28.
  */
 public interface SeimiInterceptor {

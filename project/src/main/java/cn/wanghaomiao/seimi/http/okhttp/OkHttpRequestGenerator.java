@@ -14,7 +14,7 @@ import org.springframework.util.CollectionUtils;
 import java.util.Map;
 
 /**
- * @author 汪浩淼 et.tw@163.com
+ * @author SeimiMaster seimimaster@gmail.com
  * @since 2016/6/26.
  */
 public class OkHttpRequestGenerator {

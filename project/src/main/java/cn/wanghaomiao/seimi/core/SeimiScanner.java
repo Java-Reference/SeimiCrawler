@@ -1,5 +1,5 @@
 /*
-   Copyright 2015 Wang Haomiao<et.tw@163.com>
+   Copyright 2015 Wang Haomiao<seimimaster@gmail.com>
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -19,7 +19,9 @@ import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ClassPathBeanDefinitionScanner;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;
@@ -40,18 +42,18 @@ import java.util.Set;
 
 /**
  * 上下文加载器
- * @author 汪浩淼 et.tw@163.com
+ * @author SeimiMaster seimimaster@gmail.com
  * @since 2015/6/17.
  */
-public class SeimiScanner {
+public class SeimiScanner extends ClassPathBeanDefinitionScanner {
     private final Logger logger = LoggerFactory.getLogger(getClass());
     private static final String RESOURCE_PATTERN = "**/%s/**/*.class";
-    private ResourcePatternResolver resourcePatternResolver = new PathMatchingResourcePatternResolver();
-    private AnnotationConfigApplicationContext context;
 
-    public SeimiScanner(AnnotationConfigApplicationContext context){
-        this.context = context;
+    public SeimiScanner(BeanDefinitionRegistry registry){
+        super(registry);
     }
+
+
 
     @SafeVarargs
     public final Set<Class<?>> scan(String[] confPkgs, Class<? extends Annotation>... annotationTags){

@@ -1,5 +1,5 @@
 /*
-   Copyright 2015 Wang Haomiao<et.tw@163.com>
+   Copyright 2015 Wang Haomiao<seimimaster@gmail.com>
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -44,7 +44,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 初始化上下文环境
- * @author 汪浩淼 [et.tw@163.com]
+ * @author SeimiMaster [seimimaster@gmail.com]
  *         Date: 2015/6/26.
  */
 public class SeimiContext  extends AnnotationConfigApplicationContext {
@@ -58,7 +58,7 @@ public class SeimiContext  extends AnnotationConfigApplicationContext {
     protected ExecutorService workersPool;
     protected Logger logger = LoggerFactory.getLogger(getClass());
     public SeimiContext(){
-        register(ScanConfig.class);
+        register(SeimiDefScanConfig.class);
         init();
         if(!CollectionUtils.isEmpty(crawlers)){
             prepareCrawlerModels();

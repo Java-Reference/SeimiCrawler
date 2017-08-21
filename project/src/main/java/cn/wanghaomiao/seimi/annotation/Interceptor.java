@@ -1,5 +1,5 @@
 /*
-   Copyright 2015 Wang Haomiao<et.tw@163.com>
+   Copyright 2015 Wang Haomiao<seimimaster@gmail.com>
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ import java.lang.annotation.Target;
 /**
  * 标记一个拦截器，用于解析引擎识别
  *
- * @author 汪浩淼 [et.tw@163.com]
+ * @author SeimiMaster [seimimaster@gmail.com]
  *         Date: 2015/5/28.
  */
 @Target({ElementType.TYPE, ElementType.FIELD})
