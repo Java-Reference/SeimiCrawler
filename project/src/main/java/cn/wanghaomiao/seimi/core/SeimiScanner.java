@@ -19,8 +19,10 @@ import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.config.BeanDefinitionHolder;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigUtils;
 import org.springframework.context.annotation.ClassPathBeanDefinitionScanner;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
@@ -53,7 +55,13 @@ public class SeimiScanner extends ClassPathBeanDefinitionScanner {
         super(registry);
     }
 
+    @Override
+    protected Set<BeanDefinitionHolder> doScan(String... basePackages) {
+        Set<BeanDefinitionHolder> beanDefinitionHolders = super.doScan(basePackages);
+        //do mine
 
+        return beanDefinitionHolders;
+    }
 
     @SafeVarargs
     public final Set<Class<?>> scan(String[] confPkgs, Class<? extends Annotation>... annotationTags){

@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Documented
-//@Import(ApolloConfigRegistrar.class)
+//@Import(ConfigRegistrar.class)
 public @interface EnableSeimiCrawler {
 
 }
